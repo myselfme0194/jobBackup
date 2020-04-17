@@ -1,0 +1,93 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.36">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>aig_devops</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.15">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>572</queueId>
+  <timestamp>1582017763291</timestamp>
+  <startTime>1582017763293</startTime>
+  <result>FAILURE</result>
+  <duration>205</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+  stage(&apos;checkout&apos;) {
+    git &apos;https://github.com/harsharameshh/artifactory.git&apos;
+  }
+  stage(&apos;build&apos;){
+     //  currentBuild.displayName = &quot;1.10&quot;
+      sh  &quot; ./gradlew clean assemble&quot;
+  }
+       stage(&apos;SonarQube analysis&apos;) {
+          withSonarQubeEnv() {
+      	 //  sh &quot; ./gradlew sonarqube -Dsonar.projectKey=harsha_aig -Dsonar.host.url=http://34.219.184.2:9000  -Dsonar.login=admin -Dsonar.password=admin&quot;
+          }
+      	}
+      	stage(&apos;run test&apos;){
+      sh  &quot; ./gradlew build&quot;
+  }
+      	stage(&apos;artifactory&apos;)
+      	{
+      	  
+            sh &quot;./gradlew artifactoryPublish  &quot;  
+             def server = Artifactory.server &apos;JFROG&apos;
+                 def uploadSpec = &quot;&quot;&quot;{
+                 &quot;files&quot;: [{
+                       &quot;pattern&quot;: &quot;path/&quot;,
+                       &quot;target&quot;: &quot;path/&quot;
+                    }]
+                 }&quot;&quot;&quot;
+           
+
+                 server.upload(uploadSpec) 
+     
+            
+      	}
+      }</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>65548197</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>14243688</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>124417973</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>21546092</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>6139404</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>12</iota>
+    <head>1:12</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

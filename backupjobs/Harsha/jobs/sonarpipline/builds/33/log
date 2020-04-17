@@ -1,0 +1,465 @@
+Started by user [8mha:////4Gojpe4s3cOkK3WWvuXv1k3EB+84BdpmDgMSF9MtJGNEAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/dLi1CL9xMz0+JTUsvyCYgBp74tpxQAAAA==[0mDevops
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4FrjW9LZ2CXBjQR4+K2LOUePGFwfy5q7oNp43I6t2MheAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4EYQ1T7I6Ua0Y3Yl6Afn83MuRbbypfugEVGRUWBLZzc/AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4E9x72RKOQis1E4fhOazc1lKNcR5VzEcwBS9bgUYNT0hAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/sonarpipline
+[8mha:////4K9FtIb73GakJfpIBmi+KFteUZ4jIBBZ0rVFrqUKumWTAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4C7NDJyHXWwapdbdimMy2MJb2M4Y3CNHWYSyi0wiZitmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4DRaOpWeXva+OKvPV68dr9O8BBVh9IQrnxQw+KGa7RR8AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (SCM)
+[8mha:////4Jn7LuWuFlekQEWlXCEvGRNsNiGqpX/BI1EH1XGXl36IAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] git
+No credentials specified
+ > /bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /bin/git config remote.origin.url https://github.com/harsharameshh/sonar-scanner-gradle.git # timeout=10
+Fetching upstream changes from https://github.com/harsharameshh/sonar-scanner-gradle.git
+ > /bin/git --version # timeout=10
+ > /bin/git fetch --tags --progress https://github.com/harsharameshh/sonar-scanner-gradle.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > /bin/git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ee27aa49577c1cb29c093668696c45c959bd2822 (refs/remotes/origin/master)
+ > /bin/git config core.sparsecheckout # timeout=10
+ > /bin/git checkout -f ee27aa49577c1cb29c093668696c45c959bd2822 # timeout=10
+ > /bin/git branch -a -v --no-abbrev # timeout=10
+ > /bin/git branch -D master # timeout=10
+ > /bin/git checkout -b master ee27aa49577c1cb29c093668696c45c959bd2822 # timeout=10
+Commit message: "Update travis.sh"
+First time build. Skipping changelog.
+[8mha:////4IEAt1KLxuglPvq2gAzr4D4WE2yVbvrpixlkvECzXWF0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4Mm7mLSG6WvPehhvhuzkhMsYKzDWN06N0oE0fJatXc9PAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4NYHG47TuvleaaVXGxIxVTvx8w5oE7gOf4ZpNvqzYMKyAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] stage
+[8mha:////4KT+KrI5AjhUCoesyFt0qBCIh5fro+GGD/DWxYmLADPyAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] { (build)
+[8mha:////4CaOztlFk5V3wsZA9MkgwXufikCz/tUtZlqBFikZaAX0AAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] sh
++ ./gradlew build
+Downloading https://services.gradle.org/distributions/gradle-4.6-all.zip
+.....................................................................................................
+Starting a Gradle Daemon (subsequent builds will be faster)
+Download https://plugins.gradle.org/m2/com/gradle/plugin-publish/com.gradle.plugin-publish.gradle.plugin/0.9.9/com.gradle.plugin-publish.gradle.plugin-0.9.9.pom
+Download https://plugins.gradle.org/m2/org/sonarqube/org.sonarqube.gradle.plugin/2.7/org.sonarqube.gradle.plugin-2.7.pom
+Download https://plugins.gradle.org/m2/com/jfrog/artifactory/com.jfrog.artifactory.gradle.plugin/4.5.4/com.jfrog.artifactory.gradle.plugin-4.5.4.pom
+Download https://plugins.gradle.org/m2/com/github/hierynomus/license/com.github.hierynomus.license.gradle.plugin/0.14.0/com.github.hierynomus.license.gradle.plugin-0.14.0.pom
+Download https://plugins.gradle.org/m2/net/researchgate/release/net.researchgate.release.gradle.plugin/2.6.0/net.researchgate.release.gradle.plugin-2.6.0.pom
+Download https://plugins.gradle.org/m2/com/jfrog/bintray/com.jfrog.bintray.gradle.plugin/1.7.3/com.jfrog.bintray.gradle.plugin-1.7.3.pom
+Download https://plugins.gradle.org/m2/com/gradle/publish/plugin-publish-plugin/0.9.9/plugin-publish-plugin-0.9.9.pom
+Download https://plugins.gradle.org/m2/org/sonarsource/scanner/gradle/sonarqube-gradle-plugin/2.7/sonarqube-gradle-plugin-2.7.pom
+Download https://plugins.gradle.org/m2/org/jfrog/buildinfo/build-info-extractor-gradle/4.5.4/build-info-extractor-gradle-4.5.4.pom
+Download https://plugins.gradle.org/m2/gradle/plugin/nl/javadude/gradle/plugins/license-gradle-plugin/0.14.0/license-gradle-plugin-0.14.0.pom
+Download https://plugins.gradle.org/m2/net/researchgate/gradle-release/2.6.0/gradle-release-2.6.0.pom
+Download https://plugins.gradle.org/m2/com/jfrog/bintray/gradle/gradle-bintray-plugin/1.7.3/gradle-bintray-plugin-1.7.3.pom
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-model/3.0.4/maven-model-3.0.4.pom
+Download https://plugins.gradle.org/m2/commons-io/commons-io/1.4/commons-io-1.4.pom
+Download https://plugins.gradle.org/m2/org/apache/maven/maven/3.0.4/maven-3.0.4.pom
+Download https://plugins.gradle.org/m2/org/apache/commons/commons-parent/7/commons-parent-7.pom
+Download https://plugins.gradle.org/m2/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom
+Download https://plugins.gradle.org/m2/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2.pom
+Download https://plugins.gradle.org/m2/oauth/signpost/oauth-signpost/1.2.1.2/oauth-signpost-1.2.1.2.pom
+Download https://plugins.gradle.org/m2/org/sonarsource/scanner/api/sonar-scanner-api/2.12.0.1661/sonar-scanner-api-2.12.0.1661.pom
+Download https://plugins.gradle.org/m2/org/sonarsource/scanner/api/sonar-scanner-api-parent/2.12.0.1661/sonar-scanner-api-parent-2.12.0.1661.pom
+Download https://plugins.gradle.org/m2/org/sonarsource/parent/parent/48/parent-48.pom
+Download https://plugins.gradle.org/m2/org/apache/ivy/ivy/2.2.0/ivy-2.2.0.pom
+Download https://plugins.gradle.org/m2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+Download https://plugins.gradle.org/m2/org/apache/apache/7/apache-7.pom
+Download https://plugins.gradle.org/m2/org/apache/commons/commons-parent/5/commons-parent-5.pom
+Download https://plugins.gradle.org/m2/commons-lang/commons-lang/2.4/commons-lang-2.4.pom
+Download https://plugins.gradle.org/m2/org/jfrog/buildinfo/build-info-extractor/2.9.1/build-info-extractor-2.9.1.pom
+Download https://plugins.gradle.org/m2/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7.pom
+Download https://plugins.gradle.org/m2/org/apache/commons/commons-parent/9/commons-parent-9.pom
+Download https://plugins.gradle.org/m2/com/mycila/xmltool/xmltool/3.3/xmltool-3.3.pom
+Download https://plugins.gradle.org/m2/com/mycila/license-maven-plugin/3.0/license-maven-plugin-3.0.pom
+Download https://plugins.gradle.org/m2/com/mycila/license-maven-plugin-parent/3.0/license-maven-plugin-parent-3.0.pom
+Download https://plugins.gradle.org/m2/com/mycila/mycila-pom/3/mycila-pom-3.pom
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-ant-tasks/2.1.3/maven-ant-tasks-2.1.3.pom
+Download https://plugins.gradle.org/m2/org/codehaus/groovy/modules/http-builder/http-builder/0.7.2/http-builder-0.7.2.pom
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-parent/19/maven-parent-19.pom
+Download https://plugins.gradle.org/m2/commons-codec/commons-codec/1.3/commons-codec-1.3.pom
+Download https://plugins.gradle.org/m2/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.pom
+Download https://plugins.gradle.org/m2/com/thoughtworks/xstream/xstream-parent/1.3.1/xstream-parent-1.3.1.pom
+Download https://plugins.gradle.org/m2/org/jfrog/buildinfo/build-info-client/2.9.1/build-info-client-2.9.1.pom
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-settings/3.0.4/maven-settings-3.0.4.pom
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-settings-builder/3.0.4/maven-settings-builder-3.0.4.pom
+Download https://plugins.gradle.org/m2/com/mycila/mycila-xmltool/4.4.ga/mycila-xmltool-4.4.ga.pom
+Download https://plugins.gradle.org/m2/org/springframework/spring-core/3.1.3.RELEASE/spring-core-3.1.3.RELEASE.pom
+Download https://plugins.gradle.org/m2/org/springframework/spring-parent/3.1.3.RELEASE/spring-parent-3.1.3.RELEASE.pom
+Download https://plugins.gradle.org/m2/net/sf/json-lib/json-lib/2.3/json-lib-2.3.pom
+Download https://plugins.gradle.org/m2/org/apache/httpcomponents/httpclient/4.2.1/httpclient-4.2.1.pom
+Download https://plugins.gradle.org/m2/xml-resolver/xml-resolver/1.2/xml-resolver-1.2.pom
+Download https://plugins.gradle.org/m2/org/apache/httpcomponents/httpcomponents-client/4.2.1/httpcomponents-client-4.2.1.pom
+Download https://plugins.gradle.org/m2/org/apache/httpcomponents/project/6/project-6.pom
+Download https://plugins.gradle.org/m2/net/sourceforge/nekohtml/nekohtml/1.9.16/nekohtml-1.9.16.pom
+Download https://plugins.gradle.org/m2/org/apache/ant/ant/1.8.0/ant-1.8.0.pom
+Download https://plugins.gradle.org/m2/org/apache/ant/ant-parent/1.8.0/ant-parent-1.8.0.pom
+Download https://plugins.gradle.org/m2/org/apache/maven/wagon/wagon-file/1.0-beta-6/wagon-file-1.0-beta-6.pom
+Download https://plugins.gradle.org/m2/org/apache/maven/wagon/wagon-providers/1.0-beta-6/wagon-providers-1.0-beta-6.pom
+Download https://plugins.gradle.org/m2/org/apache/maven/wagon/wagon/1.0-beta-6/wagon-1.0-beta-6.pom
+Download https://plugins.gradle.org/m2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.pom
+Download https://plugins.gradle.org/m2/org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-6/wagon-http-lightweight-1.0-beta-6.pom
+Download https://plugins.gradle.org/m2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom
+Download https://plugins.gradle.org/m2/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.pom
+Download https://plugins.gradle.org/m2/org/jfrog/buildinfo/build-info-api/2.9.1/build-info-api-2.9.1.pom
+Download https://plugins.gradle.org/m2/com/fasterxml/jackson/core/jackson-core/2.8.1/jackson-core-2.8.1.pom
+Download https://plugins.gradle.org/m2/org/apache/httpcomponents/httpcomponents-core/4.4.5/httpcomponents-core-4.4.5.pom
+Download https://plugins.gradle.org/m2/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom
+Download https://plugins.gradle.org/m2/org/apache/httpcomponents/project/7/project-7.pom
+Download https://plugins.gradle.org/m2/com/fasterxml/oss-parent/27/oss-parent-27.pom
+Download https://plugins.gradle.org/m2/org/springframework/spring-asm/3.1.3.RELEASE/spring-asm-3.1.3.RELEASE.pom
+Download https://plugins.gradle.org/m2/org/apache/commons/commons-pool2/2.2/commons-pool2-2.2.pom
+Download https://plugins.gradle.org/m2/org/apache/commons/commons-parent/33/commons-parent-33.pom
+Download https://plugins.gradle.org/m2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom
+Download https://plugins.gradle.org/m2/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.pom
+Download https://plugins.gradle.org/m2/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.pom
+Download https://plugins.gradle.org/m2/org/apache/commons/commons-parent/11/commons-parent-11.pom
+Download https://plugins.gradle.org/m2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.pom
+Download https://plugins.gradle.org/m2/org/apache/ant/ant-launcher/1.8.0/ant-launcher-1.8.0.pom
+Download https://plugins.gradle.org/m2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.pom
+Download https://plugins.gradle.org/m2/org/apache/commons/commons-compress/1.3/commons-compress-1.3.pom
+Download https://plugins.gradle.org/m2/com/fasterxml/jackson/core/jackson-databind/2.8.1/jackson-databind-2.8.1.pom
+Download https://plugins.gradle.org/m2/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.pom
+Download https://plugins.gradle.org/m2/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.pom
+Download https://plugins.gradle.org/m2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.pom
+Download https://plugins.gradle.org/m2/org/codehaus/plexus/plexus-utils/2.0.6/plexus-utils-2.0.6.pom
+Download https://plugins.gradle.org/m2/commons-codec/commons-codec/1.8/commons-codec-1.8.pom
+Download https://plugins.gradle.org/m2/org/apache/commons/commons-parent/28/commons-parent-28.pom
+Download https://plugins.gradle.org/m2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom
+Download https://plugins.gradle.org/m2/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+Download https://plugins.gradle.org/m2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom
+Download https://plugins.gradle.org/m2/org/apache/commons/commons-parent/34/commons-parent-34.pom
+Download https://plugins.gradle.org/m2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
+Download https://plugins.gradle.org/m2/org/apache/commons/commons-parent/32/commons-parent-32.pom
+Download https://plugins.gradle.org/m2/org/sonarsource/scanner/gradle/sonarqube-gradle-plugin/2.7/sonarqube-gradle-plugin-2.7.jar
+Download https://plugins.gradle.org/m2/gradle/plugin/nl/javadude/gradle/plugins/license-gradle-plugin/0.14.0/license-gradle-plugin-0.14.0.jar
+Download https://plugins.gradle.org/m2/com/gradle/publish/plugin-publish-plugin/0.9.9/plugin-publish-plugin-0.9.9.jar
+Download https://plugins.gradle.org/m2/net/researchgate/gradle-release/2.6.0/gradle-release-2.6.0.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-ant-tasks/2.1.3/maven-ant-tasks-2.1.3.jar
+Download https://plugins.gradle.org/m2/com/jfrog/bintray/gradle/gradle-bintray-plugin/1.7.3/gradle-bintray-plugin-1.7.3.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-model/3.0.4/maven-model-3.0.4.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar
+Download https://plugins.gradle.org/m2/org/jfrog/buildinfo/build-info-extractor/2.9.1/build-info-extractor-2.9.1.jar
+Download https://plugins.gradle.org/m2/org/jfrog/buildinfo/build-info-client/2.9.1/build-info-client-2.9.1.jar
+Download https://plugins.gradle.org/m2/commons-io/commons-io/2.2/commons-io-2.2.jar
+Download https://plugins.gradle.org/m2/org/jfrog/buildinfo/build-info-api/2.9.1/build-info-api-2.9.1.jar
+Download https://plugins.gradle.org/m2/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2.jar
+Download https://plugins.gradle.org/m2/org/sonarsource/scanner/api/sonar-scanner-api/2.12.0.1661/sonar-scanner-api-2.12.0.1661.jar
+Download https://plugins.gradle.org/m2/org/apache/ivy/ivy/2.2.0/ivy-2.2.0.jar
+Download https://plugins.gradle.org/m2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar
+Download https://plugins.gradle.org/m2/com/mycila/license-maven-plugin/3.0/license-maven-plugin-3.0.jar
+Download https://plugins.gradle.org/m2/org/codehaus/groovy/modules/http-builder/http-builder/0.7.2/http-builder-0.7.2.jar
+Download https://plugins.gradle.org/m2/net/sf/json-lib/json-lib/2.3/json-lib-2.3-jdk15.jar
+Download https://plugins.gradle.org/m2/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar
+Download https://plugins.gradle.org/m2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar
+Download https://plugins.gradle.org/m2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+Download https://plugins.gradle.org/m2/org/springframework/spring-core/3.1.3.RELEASE/spring-core-3.1.3.RELEASE.jar
+Download https://plugins.gradle.org/m2/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar
+Download https://plugins.gradle.org/m2/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+Download https://plugins.gradle.org/m2/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-settings-builder/3.0.4/maven-settings-builder-3.0.4.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/wagon/wagon-file/1.0-beta-6/wagon-file-1.0-beta-6.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-6/wagon-http-lightweight-1.0-beta-6.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar
+Download https://plugins.gradle.org/m2/org/codehaus/plexus/plexus-utils/2.0.6/plexus-utils-2.0.6.jar
+Download https://plugins.gradle.org/m2/org/apache/maven/maven-settings/3.0.4/maven-settings-3.0.4.jar
+Download https://plugins.gradle.org/m2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+Download https://plugins.gradle.org/m2/com/mycila/xmltool/xmltool/3.3/xmltool-3.3.jar
+Download https://plugins.gradle.org/m2/com/mycila/mycila-xmltool/4.4.ga/mycila-xmltool-4.4.ga.jar
+Download https://plugins.gradle.org/m2/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar
+Download https://plugins.gradle.org/m2/net/sourceforge/nekohtml/nekohtml/1.9.16/nekohtml-1.9.16.jar
+Download https://plugins.gradle.org/m2/xml-resolver/xml-resolver/1.2/xml-resolver-1.2.jar
+Download https://plugins.gradle.org/m2/org/apache/ant/ant/1.8.0/ant-1.8.0.jar
+Download https://plugins.gradle.org/m2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
+Download https://plugins.gradle.org/m2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar
+Download https://plugins.gradle.org/m2/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.jar
+Download https://plugins.gradle.org/m2/com/fasterxml/jackson/core/jackson-databind/2.8.1/jackson-databind-2.8.1.jar
+Download https://plugins.gradle.org/m2/com/fasterxml/jackson/core/jackson-core/2.8.1/jackson-core-2.8.1.jar
+Download https://plugins.gradle.org/m2/org/springframework/spring-asm/3.1.3.RELEASE/spring-asm-3.1.3.RELEASE.jar
+Download https://plugins.gradle.org/m2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+Download https://plugins.gradle.org/m2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar
+Download https://plugins.gradle.org/m2/org/apache/commons/commons-pool2/2.2/commons-pool2-2.2.jar
+Download https://plugins.gradle.org/m2/org/apache/ant/ant-launcher/1.8.0/ant-launcher-1.8.0.jar
+Download https://plugins.gradle.org/m2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar
+Download https://plugins.gradle.org/m2/org/apache/commons/commons-compress/1.3/commons-compress-1.3.jar
+Download https://plugins.gradle.org/m2/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.jar
+Download https://plugins.gradle.org/m2/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.jar
+Download https://plugins.gradle.org/m2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar
+Download https://plugins.gradle.org/m2/org/jfrog/buildinfo/build-info-extractor-gradle/4.5.4/build-info-extractor-gradle-4.5.4.jar
+:compileJava
+Download https://maven.google.com/com/android/tools/build/gradle/3.1.0/gradle-3.1.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/sonarsource/scanner/api/sonar-scanner-api/2.14.0.2002/sonar-scanner-api-2.14.0.2002.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/sonarsource/scanner/api/sonar-scanner-api-parent/2.14.0.2002/sonar-scanner-api-parent-2.14.0.2002.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/sonarsource/parent/parent/52/parent-52.pom
+Download https://maven.google.com/com/android/tools/build/bundletool/0.1.0-alpha01/bundletool-0.1.0-alpha01.pom
+Download https://maven.google.com/com/android/tools/build/gradle-core/3.1.0/gradle-core-3.1.0.pom
+Download https://maven.google.com/com/android/tools/build/builder/3.1.0/builder-3.1.0.pom
+Download https://maven.google.com/com/android/tools/lint/lint-gradle-api/26.1.0/lint-gradle-api-26.1.0.pom
+Download https://maven.google.com/com/android/databinding/compilerCommon/3.1.0/compilerCommon-3.1.0.pom
+Download https://maven.google.com/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/jetbrains/kotlin/kotlin-stdlib-jre8/1.2.0/kotlin-stdlib-jre8-1.2.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/ow2/asm/asm/5.1/asm-5.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/ow2/asm/asm-parent/5.1/asm-parent-5.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/ow2/asm/asm-analysis/5.1/asm-analysis-5.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/ow2/ow2/1.3/ow2-1.3.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/ow2/asm/asm-util/5.1/asm-util-5.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/ow2/asm/asm-commons/5.1/asm-commons-5.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.pom
+Download https://maven.google.com/com/android/tools/build/gradle-api/3.1.0/gradle-api-3.1.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/net/sf/proguard/proguard-gradle/5.3.3/proguard-gradle-5.3.3.pom
+Download https://repox.jfrog.io/repox/sonarsource/net/sf/proguard/proguard-parent/5.3.3/proguard-parent-5.3.3.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/auto/value/auto-value/1.5.2/auto-value-1.5.2.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/guava/guava/22.0/guava-22.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/auto/auto-parent/3/auto-parent-3.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/protobuf/protobuf-java-util/3.4.0/protobuf-java-util-3.4.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/guava/guava-parent/22.0/guava-parent-22.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/protobuf/protobuf-parent/3.4.0/protobuf-parent-3.4.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/errorprone/error_prone_annotations/2.1.2/error_prone_annotations-2.1.2.pom
+Download https://maven.google.com/com/android/tools/build/aapt2-proto/0.1.0/aapt2-proto-0.1.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/errorprone/error_prone_parent/2.1.2/error_prone_parent-2.1.2.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/protobuf/protobuf-java/3.4.0/protobuf-java-3.4.0.pom
+Download https://maven.google.com/com/android/tools/build/builder-test-api/3.1.0/builder-test-api-3.1.0.pom
+Download https://maven.google.com/com/android/tools/build/builder-model/3.1.0/builder-model-3.1.0.pom
+Download https://maven.google.com/com/android/tools/common/26.1.0/common-26.1.0.pom
+Download https://maven.google.com/com/android/tools/sdk-common/26.1.0/sdk-common-26.1.0.pom
+Download https://maven.google.com/com/android/tools/build/manifest-merger/26.1.0/manifest-merger-26.1.0.pom
+Download https://maven.google.com/com/android/tools/ddms/ddmlib/26.1.0/ddmlib-26.1.0.pom
+Download https://maven.google.com/com/android/tools/analytics-library/protos/26.1.0/protos-26.1.0.pom
+Download https://maven.google.com/com/android/tools/analytics-library/shared/26.1.0/shared-26.1.0.pom
+Download https://maven.google.com/com/android/tools/analytics-library/tracker/26.1.0/tracker-26.1.0.pom
+Download https://maven.google.com/com/android/tools/build/apksig/3.1.0/apksig-3.1.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/bouncycastle/bcpkix-jdk15on/1.56/bcpkix-jdk15on-1.56.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/squareup/javawriter/2.5.0/javawriter-2.5.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/bouncycastle/bcprov-jdk15on/1.56/bcprov-jdk15on-1.56.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/ow2/asm/asm-tree/5.1/asm-tree-5.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.pom
+Download https://maven.google.com/com/android/tools/sdklib/26.1.0/sdklib-26.1.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/it/unimi/dsi/fastutil/7.2.0/fastutil-7.2.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/jetbrains/kotlin/kotlin-reflect/1.2.0/kotlin-reflect-1.2.0.pom
+Download https://maven.google.com/com/android/databinding/baseLibrary/3.1.0/baseLibrary-3.1.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/antlr/antlr4/4.5.3/antlr4-4.5.3.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/antlr/antlr4-master/4.5.3/antlr4-master-4.5.3.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/squareup/javapoet/1.8.0/javapoet-1.8.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/android/tools/annotations/24.5.0/annotations-24.5.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/code/gson/gson/2.7/gson-2.7.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/code/gson/gson-parent/2.7/gson-parent-2.7.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/apache/9/apache-9.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/jetbrains/kotlin/kotlin-stdlib-jre7/1.2.0/kotlin-stdlib-jre7-1.2.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/jetbrains/kotlin/kotlin-stdlib/1.2.0/kotlin-stdlib-1.2.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/net/sf/proguard/proguard-base/5.3.3/proguard-base-5.3.3.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/codehaus/mojo/animal-sniffer-parent/1.14/animal-sniffer-parent-1.14.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom
+Download https://maven.google.com/com/android/tools/layoutlib/layoutlib-api/26.1.0/layoutlib-api-26.1.0.pom
+Download https://maven.google.com/com/android/tools/dvlib/26.1.0/dvlib-26.1.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/commons/commons-compress/1.12/commons-compress-1.12.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/apache/16/apache-16.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/httpcomponents/project/7/project-7.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/apache/13/apache-13.pom
+Download https://maven.google.com/com/android/tools/repository/26.1.0/repository-26.1.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/httpcomponents/httpcomponents-client/4.1/httpcomponents-client-4.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/httpcomponents/project/4.1.1/project-4.1.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/jetbrains/annotations/13.0/annotations-13.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/glassfish/jaxb/jaxb-runtime/2.2.11/jaxb-runtime-2.2.11.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/xml/bind/mvn/jaxb-runtime-parent/2.2.11/jaxb-runtime-parent-2.2.11.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/xml/bind/mvn/jaxb-parent/2.2.11/jaxb-parent-2.2.11.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/activation/all/1.2.0/all-1.2.0.pom
+Download https://repox.jfrog.io/repox/sonarsource/net/java/jvnet-parent/1/jvnet-parent-1.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/xml/bind/jaxb-bom-ext/2.2.11/jaxb-bom-ext-2.2.11.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/glassfish/jaxb/jaxb-bom/2.2.11/jaxb-bom-2.2.11.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/jimfs/jimfs/1.1/jimfs-1.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/net/java/jvnet-parent/4/jvnet-parent-4.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/google/jimfs/jimfs-parent/1.1/jimfs-parent-1.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.pom
+Download https://repox.jfrog.io/repox/sonarsource/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/apache/4/apache-4.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/glassfish/jaxb/jaxb-core/2.2.11/jaxb-core-2.2.11.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/jvnet/staxex/stax-ex/1.7.7/stax-ex-1.7.7.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/xml/fastinfoset/FastInfoset/1.2.13/FastInfoset-1.2.13.pom
+Download https://repox.jfrog.io/repox/sonarsource/net/java/jvnet-parent/3/jvnet-parent-3.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/xml/fastinfoset/fastinfoset-project/1.2.13/fastinfoset-project-1.2.13.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/glassfish/jaxb/txw2/2.2.11/txw2-2.2.11.pom
+Download https://repox.jfrog.io/repox/sonarsource/javax/xml/bind/jaxb-api/2.2.12-b140109.1041/jaxb-api-2.2.12-b140109.1041.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/xml/bind/mvn/jaxb-txw-parent/2.2.11/jaxb-txw-parent-2.2.11.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/istack/istack-commons-runtime/2.21/istack-commons-runtime-2.21.pom
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/istack/istack-commons/2.21/istack-commons-2.21.pom
+Download https://maven.google.com/com/android/tools/annotations/26.1.0/annotations-26.1.0.pom
+Generating JAR file 'gradle-api-4.6.jar'
+Download https://maven.google.com/com/android/tools/build/gradle/3.1.0/gradle-3.1.0.jar
+Download https://maven.google.com/com/android/tools/build/gradle-core/3.1.0/gradle-core-3.1.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/sonarsource/scanner/api/sonar-scanner-api/2.14.0.2002/sonar-scanner-api-2.14.0.2002.jar
+Download https://maven.google.com/com/android/tools/lint/lint-gradle-api/26.1.0/lint-gradle-api-26.1.0.jar
+Download https://maven.google.com/com/android/tools/build/gradle-api/3.1.0/gradle-api-3.1.0.jar
+Download https://maven.google.com/com/android/databinding/compilerCommon/3.1.0/compilerCommon-3.1.0.jar
+Download https://maven.google.com/com/android/tools/build/builder/3.1.0/builder-3.1.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/google/protobuf/protobuf-java-util/3.4.0/protobuf-java-util-3.4.0.jar
+Download https://maven.google.com/com/android/tools/build/manifest-merger/26.1.0/manifest-merger-26.1.0.jar
+Download https://maven.google.com/com/android/tools/sdk-common/26.1.0/sdk-common-26.1.0.jar
+Download https://maven.google.com/com/android/tools/build/builder-test-api/3.1.0/builder-test-api-3.1.0.jar
+Download https://maven.google.com/com/android/tools/ddms/ddmlib/26.1.0/ddmlib-26.1.0.jar
+Download https://maven.google.com/com/android/tools/analytics-library/tracker/26.1.0/tracker-26.1.0.jar
+Download https://maven.google.com/com/android/tools/analytics-library/shared/26.1.0/shared-26.1.0.jar
+Download https://maven.google.com/com/android/tools/sdklib/26.1.0/sdklib-26.1.0.jar
+Download https://maven.google.com/com/android/tools/layoutlib/layoutlib-api/26.1.0/layoutlib-api-26.1.0.jar
+Download https://maven.google.com/com/android/tools/dvlib/26.1.0/dvlib-26.1.0.jar
+Download https://maven.google.com/com/android/tools/repository/26.1.0/repository-26.1.0.jar
+Download https://maven.google.com/com/android/tools/common/26.1.0/common-26.1.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/google/guava/guava/22.0/guava-22.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+Download https://maven.google.com/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/jetbrains/kotlin/kotlin-stdlib-jre8/1.2.0/kotlin-stdlib-jre8-1.2.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/ow2/asm/asm-analysis/5.1/asm-analysis-5.1.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/ow2/asm/asm-commons/5.1/asm-commons-5.1.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/ow2/asm/asm-tree/5.1/asm-tree-5.1.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/ow2/asm/asm-util/5.1/asm-util-5.1.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/ow2/asm/asm/5.1/asm-5.1.jar
+Download https://repox.jfrog.io/repox/sonarsource/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar
+Download https://repox.jfrog.io/repox/sonarsource/net/sf/proguard/proguard-gradle/5.3.3/proguard-gradle-5.3.3.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/google/auto/value/auto-value/1.5.2/auto-value-1.5.2.jar
+Download https://maven.google.com/com/android/tools/build/aapt2-proto/0.1.0/aapt2-proto-0.1.0.jar
+Download https://maven.google.com/com/android/tools/analytics-library/protos/26.1.0/protos-26.1.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/google/protobuf/protobuf-java/3.4.0/protobuf-java-3.4.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/google/errorprone/error_prone_annotations/2.1.2/error_prone_annotations-2.1.2.jar
+Download https://maven.google.com/com/android/tools/build/builder-model/3.1.0/builder-model-3.1.0.jar
+Download https://maven.google.com/com/android/tools/build/apksig/3.1.0/apksig-3.1.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/bouncycastle/bcpkix-jdk15on/1.56/bcpkix-jdk15on-1.56.jar
+Download https://repox.jfrog.io/repox/sonarsource/it/unimi/dsi/fastutil/7.2.0/fastutil-7.2.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/bouncycastle/bcprov-jdk15on/1.56/bcprov-jdk15on-1.56.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/jetbrains/kotlin/kotlin-reflect/1.2.0/kotlin-reflect-1.2.0.jar
+Download https://maven.google.com/com/android/databinding/baseLibrary/3.1.0/baseLibrary-3.1.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/antlr/antlr4/4.5.3/antlr4-4.5.3.jar
+Download https://repox.jfrog.io/repox/sonarsource/commons-io/commons-io/2.4/commons-io-2.4.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/squareup/javapoet/1.8.0/javapoet-1.8.0.jar
+Download https://maven.google.com/com/android/tools/annotations/26.1.0/annotations-26.1.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/google/code/gson/gson/2.7/gson-2.7.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/jetbrains/kotlin/kotlin-stdlib-jre7/1.2.0/kotlin-stdlib-jre7-1.2.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/net/sf/proguard/proguard-base/5.3.3/proguard-base-5.3.3.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/jetbrains/kotlin/kotlin-stdlib/1.2.0/kotlin-stdlib-1.2.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/commons/commons-compress/1.12/commons-compress-1.12.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar
+Download https://repox.jfrog.io/repox/sonarsource/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/jetbrains/annotations/13.0/annotations-13.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/glassfish/jaxb/jaxb-runtime/2.2.11/jaxb-runtime-2.2.11.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar
+Download https://repox.jfrog.io/repox/sonarsource/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+Download https://repox.jfrog.io/repox/sonarsource/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/jvnet/staxex/stax-ex/1.7.7/stax-ex-1.7.7.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/glassfish/jaxb/jaxb-core/2.2.11/jaxb-core-2.2.11.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/xml/fastinfoset/FastInfoset/1.2.13/FastInfoset-1.2.13.jar
+Download https://repox.jfrog.io/repox/sonarsource/javax/xml/bind/jaxb-api/2.2.12-b140109.1041/jaxb-api-2.2.12-b140109.1041.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/glassfish/jaxb/txw2/2.2.11/txw2-2.2.11.jar
+Download https://maven.google.com/com/android/tools/build/bundletool/0.1.0-alpha01/bundletool-0.1.0-alpha01.jar
+Download https://repox.jfrog.io/repox/sonarsource/com/sun/istack/istack-commons-runtime/2.21/istack-commons-runtime-2.21.jar
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:compileGroovy NO-SOURCE
+:pluginDescriptors
+:processResources
+:classes
+:jar
+:groovydoc NO-SOURCE
+:publishPluginGroovyDocsJar
+:publishPluginJar
+:javadoc
+:publishPluginJavaDocsJar
+:assemble
+:licenseMain UP-TO-DATE
+:licenseTest UP-TO-DATE
+:license UP-TO-DATE
+:pluginUnderTestMetadata
+:compileTestJava NO-SOURCE
+:compileTestGroovy
+Download https://repox.jfrog.io/repox/sonarsource/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.pom
+Download https://repox.jfrog.io/repox/sonarsource/junit/junit/4.12/junit-4.12.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/spockframework/spock-core/1.1-groovy-2.4/spock-core-1.1-groovy-2.4.pom
+Generating JAR file 'gradle-test-kit-4.6.jar'
+Download https://repox.jfrog.io/repox/sonarsource/junit/junit/4.12/junit-4.12.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/spockframework/spock-core/1.1-groovy-2.4/spock-core-1.1-groovy-2.4.jar
+Download https://repox.jfrog.io/repox/sonarsource/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar
+:processTestResources NO-SOURCE
+:testClasses
+:test
+Download https://repox.jfrog.io/repox/sonarsource/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/jacoco/org.jacoco.build/0.8.1/org.jacoco.build-0.8.1.pom
+Download https://repox.jfrog.io/repox/sonarsource/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1.jar
+:validateTaskProperties
+:check
+:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+See https://docs.gradle.org/4.6/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2m 54s
+14 actionable tasks: 12 executed, 2 up-to-date
+[8mha:////4LO/UV7dfjLzK/ILHB0/HYuXOFfb8/QoTMNnclPBhhAYAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyGUvHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzN4nqNv9p9o3geV5574AAAA=[0m[Pipeline] }
+[8mha:////4JvaC34wS9YApHN4OzC+n6ei+wvCq5gYCeFgfs//PFReAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bq/le42+AAAA[0m[Pipeline] // stage
+[8mha:////4LXiyjjfdceBZdjJQ7NEZ8UxviImlWm9chdURzs7eAnUAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJKgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxWb3OZZvBXXnAcEAAAA=[0m[Pipeline] stage
+[8mha:////4FKAfecZoWs0VpTHGy7sskO6TZBsRDDdlgjYoN5MLdhpAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] { (SonarQube analysis)
+[8mha:////4GbO8OYNxREZSZR1tlMOkcS6mOWqSLU7R7D5VPdL41/PAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] withSonarQubeEnv
+Injecting SonarQube environment variables using the configuration: sonarqube
+[8mha:////4G7dVZ2T6aRwFUOmIWMCaWTaE/D8th2ce9h3GJOI+LuqAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] {
+[8mha:////4DsBJmkg/n082vWnyIJCmOUCIUsu5qbcgap00FiDPEAoAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr2eB0O+AAAA[0m[Pipeline] sh
++ ./gradlew sonarqube -Dsonar.projectKey=harsha_007 -Dsonar.host.url=http://34.219.184.2:9000 -Dsonar.login=harsha
+:compileJava UP-TO-DATE
+:compileGroovy NO-SOURCE
+:pluginDescriptors UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:pluginUnderTestMetadata UP-TO-DATE
+:compileTestJava NO-SOURCE
+:compileTestGroovy UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+:sonarqube
+SonarScanner will require Java 11+ to run starting in SonarQube 8.x
+:sonarqube FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':sonarqube'.
+> Not authorized. Please check the properties sonar.login and sonar.password.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+See https://docs.gradle.org/4.6/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 1s
+7 actionable tasks: 1 executed, 6 up-to-date
+[8mha:////4IbZU7sUe44nPqF0HnrlGfIXrH+4M6lJZdvBe/2lbts1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICVEgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AEWNdkpvgAAAA==[0m[Pipeline] }
+WARN: Unable to locate 'report-task.txt' in the workspace. Did the SonarScanner succeeded?
+[8mha:////4I2jZSb471X97+gDWK2IP3zvyl887MW1sVpcj0FHOoe5AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0FAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AEi+zpyvgAAAA==[0m[Pipeline] // withSonarQubeEnv
+[8mha:////4KdOMs7IgUTEU8A4gbcFxXCtR/0YvkbI764ehB2MjBEhAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRKWgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AEauamDvgAAAA==[0m[Pipeline] }
+[8mha:////4BREQYfmYfFiuZ/FY1Pt/UwC29SRbi3v0KEnmPsaRMguAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdPtf28AEFO/zRvgAAAA==[0m[Pipeline] // stage
+[8mha:////4C3GEB1y1nwbMPauo4ydoqJHhpkmra2D7VA3BZGJ2nQlAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6Ikhs04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0g35eCrPwA6/9Rob0AAAA=[0m[Pipeline] }
+[8mha:////4CHAEA5/KUBHL83/4WIp/7qrMDokdGM0GlMWqx/9AwfCAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsP+ENVAr0AAAA=[0m[Pipeline] // node
+[8mha:////4NpgP+RkbAmFAHRp/VlnamIvE4mMMCaiJ0T0rzFRnqI4AAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkDC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHvgnyMr0AAAA=[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

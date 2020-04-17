@@ -1,0 +1,44 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.4">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.80">
+    <parentIds>
+      <string>34</string>
+    </parentIds>
+    <id>35</id>
+    <descriptorId>org.jenkinsci.plugins.credentialsbinding.impl.BindingStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.80">
+      <arguments>
+        <entry>
+          <string>bindings</string>
+          <list>
+            <linked-hash-map>
+              <entry>
+                <string>$class</string>
+                <string>UsernamePasswordMultiBinding</string>
+              </entry>
+              <entry>
+                <string>credentialsId</string>
+                <string>devopspipeline_artifactory_credential_id</string>
+              </entry>
+              <entry>
+                <string>usernameVariable</string>
+                <string>artifactoryUsername</string>
+              </entry>
+              <entry>
+                <string>passwordVariable</string>
+                <string>artifactoryPassword</string>
+              </entry>
+            </linked-hash-map>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.39">
+      <startTime>1582727039573</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

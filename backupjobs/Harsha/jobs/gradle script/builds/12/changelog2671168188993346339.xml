@@ -1,0 +1,45 @@
+commit 585ec8cc9ea638e0edd9f400802b59e6c5f46e30
+tree 959728d57d52bb926563d5b9b93e9194ba96a29c
+parent f39028beb66b3d3fddb176ba9515b98e85a1b7b0
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-28 15:25:58 +0530
+committer GitHub <noreply@github.com> 2020-01-28 15:25:58 +0530
+
+    Update gradle.properties
+
+:100644 100644 7c2beb1b7640684c5fd7e4db4ed9ee8d5e044804 aabe3b0fe8fd44d804239ae28e80ab330fa6f88c M	sonarqube-scanner-gradle/gradle.properties
+commit f39028beb66b3d3fddb176ba9515b98e85a1b7b0
+tree c3407e928f3dda567475774b8b0d8230b9728b80
+parent 1353a6255214d92647c33c31f76ef2063c8d05ab
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-28 14:43:15 +0530
+committer GitHub <noreply@github.com> 2020-01-28 14:43:15 +0530
+
+    Update build.gradle
+
+:100644 100644 4ec4202340104d49e6f545d1aa328c31e13ad5f5 eb851154fd29cda8694786da476a0fce135c6411 M	sonarqube-scanner-gradle/build.gradle
+commit 1353a6255214d92647c33c31f76ef2063c8d05ab
+tree 750a205734f9f1197b305e83fe65c72c1d5f66e0
+parent 762b8c1981d6ac9913d325de3fa80d182226e9af
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-28 14:42:29 +0530
+committer GitHub <noreply@github.com> 2020-01-28 14:42:29 +0530
+
+    Update build.gradle
+
+:100644 100644 d852f97424c8e4b3b0852efed41513025cd6152c 4ec4202340104d49e6f545d1aa328c31e13ad5f5 M	sonarqube-scanner-gradle/build.gradle
+commit 762b8c1981d6ac9913d325de3fa80d182226e9af
+tree 56224fab9bb49c32be94c26f8c867c0d096044c4
+parent 50ce9b78979b343ce7b27bcb35b9125a54d9794a
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-28 14:41:50 +0530
+committer GitHub <noreply@github.com> 2020-01-28 14:41:50 +0530
+
+    Update build.gradle
+
+:100644 100644 40a57dfa9ceced2b00635c834e5e6cfc4f8fd89a d852f97424c8e4b3b0852efed41513025cd6152c M	sonarqube-scanner-gradle/build.gradle
+commit 50ce9b78979b343ce7b27bcb35b9125a54d9794a
+tree 64006714d440aaf395b916c485d4164ab3caf974
+parent de7ea813e806d1c216c905187db9c0c9a8f5875e
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-27 16:21:10 +0530
+committer GitHub <noreply@github.com> 2020-01-27 16:21:10 +0530
+
+    Update gradle.properties
+
+:100644 100644 d7995000dac0617b50b14802f1437fd619d5fb8b 7c2beb1b7640684c5fd7e4db4ed9ee8d5e044804 M	sonarqube-scanner-gradle/gradle.properties

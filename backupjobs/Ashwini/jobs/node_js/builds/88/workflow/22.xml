@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.4">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.80">
+    <parentIds>
+      <string>21</string>
+    </parentIds>
+    <id>22</id>
+    <descriptorId>org.jfrog.hudson.pipeline.scripted.steps.CreateArtifactoryServerStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.80">
+      <arguments>
+        <entry>
+          <string>url</string>
+          <string>http://52.38.91.61:8081/artifactory</string>
+        </entry>
+        <entry>
+          <string>password</string>
+          <string>admin@123</string>
+        </entry>
+        <entry>
+          <string>username</string>
+          <string>admin</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.39">
+      <startTime>1582622328034</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

@@ -1,0 +1,64 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.36">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>ashwini</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.80">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>190</queueId>
+  <timestamp>1585833912119</timestamp>
+  <startTime>1585833912121</startTime>
+  <result>FAILURE</result>
+  <duration>203</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node(&apos;Deployment-node&apos;){
+def sql = Sql.newInstance(&quot;jdbc:mysql://34.220.173.101:3306/jenkins_db&quot;, &quot;jenkins&quot;,&quot;User_password1&quot;, &quot;com.mysql.jdbc.Driver&quot;)
+sql.execute &quot;select count(*) from pet&quot;
+    
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>43687630</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>238121447</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>59587200</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>127978754</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>2530275</long>
+      </entry>
+    </timings>
+    <sandbox>false</sandbox>
+    <iota>7</iota>
+    <head>1:7</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

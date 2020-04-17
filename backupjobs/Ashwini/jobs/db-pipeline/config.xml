@@ -1,0 +1,25 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.12"/>
+    <org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty plugin="gitlab-logo@1.0.5">
+      <repositoryName></repositoryName>
+    </org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>import groovy.sql.*
+node(&apos;Deployment-node&apos;){
+Class.forName(&quot;com.mysql.jdbc.Driver&quot;)
+def sql = Sql.newInstance(&quot;jdbc:mysql://34.220.173.101:3306/jenkins_db&quot;, &quot;jenkins&quot;,&quot;User_password1&quot;, &quot;com.mysql.jdbc.Driver&quot;)
+
+//sql.execute &quot;select count(*) from pet&quot;
+  
+}</script>
+    <sandbox>false</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

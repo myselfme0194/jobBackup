@@ -1,0 +1,135 @@
+commit dacfa582f9bd8a763f9df4cdb93bbff6b9d63076
+tree 45f6bb7916b15df235ab6305231c0b9ed2c89d2a
+parent ea0e2cebc6a90ef67d144b807ba52a6c1a2034ee
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-31 15:52:28 +0530
+committer GitHub <noreply@github.com> 2020-01-31 15:52:28 +0530
+
+    Update build.gradle
+
+:100644 100644 ff2dff4d00488c1d82808bd58f562ff91afbff02 651159cb803ceab8d9a2ef6d35dea135996937f4 M	sonarqube-scanner-gradle/build.gradle
+commit ea0e2cebc6a90ef67d144b807ba52a6c1a2034ee
+tree 22008779d19536377f303671e480985617c87786
+parent c2ee8f52094876e8b176a2d72e5d16e7328461d9
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-31 15:45:43 +0530
+committer GitHub <noreply@github.com> 2020-01-31 15:45:43 +0530
+
+    Update settings.gradle
+
+:100644 100644 6062c5b01c0053d41e9cfd55cd88e69563d351ec a59635477b609519bcc61b0ae9250766de69bdce M	sonarqube-scanner-gradle/settings.gradle
+commit c2ee8f52094876e8b176a2d72e5d16e7328461d9
+tree c110fdc43e0d1f430bf3251afe5e85d5914e6ca4
+parent d3c411a49b7d3b702cff616e9c0a044fd9441dc6
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-31 15:44:49 +0530
+committer GitHub <noreply@github.com> 2020-01-31 15:44:49 +0530
+
+    Update settings.gradle
+
+:100644 100644 bce058054aff1cd60c9b8e2d86e5101ff2556661 6062c5b01c0053d41e9cfd55cd88e69563d351ec M	sonarqube-scanner-gradle/settings.gradle
+commit d3c411a49b7d3b702cff616e9c0a044fd9441dc6
+tree f9b357ab7e0e9394da424b9d8a976a82c34fbf7c
+parent 56e63895aba991ba98381d29c4940287ca827643
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 18:24:57 +0530
+committer GitHub <noreply@github.com> 2020-01-29 18:24:57 +0530
+
+    Update build.gradle
+
+:100644 100644 d245cce4d5a67639f352d043e819ef9172da0ccb ff2dff4d00488c1d82808bd58f562ff91afbff02 M	sonarqube-scanner-gradle/build.gradle
+commit 56e63895aba991ba98381d29c4940287ca827643
+tree 5ab612d97bc4deddb929107a358393741bf37bde
+parent c291b70c85993ed50d30a3d90d104f940a403acc
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 16:44:29 +0530
+committer GitHub <noreply@github.com> 2020-01-29 16:44:29 +0530
+
+    Create SonarUtils.java
+
+:000000 100644 0000000000000000000000000000000000000000 bb3226532bb48ca18b23d560b5a627fa001acca7 A	sonarqube-scanner-gradle/src/main/java/com/acme/SonarUtils.java
+commit c291b70c85993ed50d30a3d90d104f940a403acc
+tree 0cffc20c3c4c55e547bd6ae01711dc0b06e6b91d
+parent b81123aae3e9bb4934e97fa09e450c7384aaf0c3
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 16:43:47 +0530
+committer GitHub <noreply@github.com> 2020-01-29 16:43:47 +0530
+
+    Create SonarQubeTask.java
+
+:000000 100644 0000000000000000000000000000000000000000 2a6b5e45b8cbf221176d6f9840fe3cdce0579ced A	sonarqube-scanner-gradle/src/main/java/com/acme/SonarQubeTask.java
+commit b81123aae3e9bb4934e97fa09e450c7384aaf0c3
+tree d227522bf96ffb1df5f086a676ab0d98f60d56c8
+parent 75d91dd96b8d2a9b4fcdbcec91fa2832d7024d0c
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 16:43:15 +0530
+committer GitHub <noreply@github.com> 2020-01-29 16:43:15 +0530
+
+    Create SonarQubeProperties.java
+
+:000000 100644 0000000000000000000000000000000000000000 b57447846c32e11adb4bd92e1a109b991c636d94 A	sonarqube-scanner-gradle/src/main/java/com/acme/SonarQubeProperties.java
+commit 75d91dd96b8d2a9b4fcdbcec91fa2832d7024d0c
+tree 64be3738894185f7e794d1983ebc68ad8d94a93d
+parent df2496b763f813e5c3e0e0cf35d311a4acb650ab
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 16:42:39 +0530
+committer GitHub <noreply@github.com> 2020-01-29 16:42:39 +0530
+
+    Create SonarQubePlugin.java
+
+:000000 100644 0000000000000000000000000000000000000000 019d6a77897d24afaffe55c288490e22a8b7b0ca A	sonarqube-scanner-gradle/src/main/java/com/acme/SonarQubePlugin.java
+commit df2496b763f813e5c3e0e0cf35d311a4acb650ab
+tree 970459a27717959d8a2f57025732e85f7648a1d9
+parent 99de60a034c7f2d223ca4f9847ab71d305399050
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 16:41:57 +0530
+committer GitHub <noreply@github.com> 2020-01-29 16:41:57 +0530
+
+    Create SonarQubeExtension.java
+
+:000000 100644 0000000000000000000000000000000000000000 a5ed6eb7e40d32e1f993feb42367b8e4615dce52 A	sonarqube-scanner-gradle/src/main/java/com/acme/SonarQubeExtension.java
+commit 99de60a034c7f2d223ca4f9847ab71d305399050
+tree d4396fd4eeca11a17f971931f9ffdb8ddf20bc39
+parent 689b78d1168798bcd0956495caf9bcbfdd3b53a2
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 16:41:31 +0530
+committer GitHub <noreply@github.com> 2020-01-29 16:41:31 +0530
+
+    Create SonarPropertyComputer.java
+
+:000000 100644 0000000000000000000000000000000000000000 761fd2db84ae64c426c96c6a8265d2a98bd41c57 A	sonarqube-scanner-gradle/src/main/java/com/acme/SonarPropertyComputer.java
+commit 689b78d1168798bcd0956495caf9bcbfdd3b53a2
+tree dcd625adae8f8bcbd2ac41df0d0cae3f45bc68c9
+parent 437a36e5e853533a5a2395513b2181cb7caae44b
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 16:40:57 +0530
+committer GitHub <noreply@github.com> 2020-01-29 16:40:57 +0530
+
+    Create AndroidUtils.java
+
+:000000 100644 0000000000000000000000000000000000000000 7f9d26c46fcb006d0507061213425b22f7ecb885 A	sonarqube-scanner-gradle/src/main/java/com/acme/AndroidUtils.java
+commit 437a36e5e853533a5a2395513b2181cb7caae44b
+tree 6b3eace2edd0a5f4fdaa2146b2db61888630d30e
+parent f772069072f0321bb9b0000c6f2aee3f9452b081
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 16:40:15 +0530
+committer GitHub <noreply@github.com> 2020-01-29 16:40:15 +0530
+
+    Create ActionBroadcast.java
+
+:000000 100644 0000000000000000000000000000000000000000 3e111120cbe3ad3d8677406f1dfa1bf256b75202 A	sonarqube-scanner-gradle/src/main/java/com/acme/ActionBroadcast.java
+commit f772069072f0321bb9b0000c6f2aee3f9452b081
+tree 182e00c682a1ec0347410d3ccf89bb3f839ce286
+parent 94ee983fa1dab2ebd3bf3a5c89b860792bef2a08
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 14:43:18 +0530
+committer GitHub <noreply@github.com> 2020-01-29 14:43:18 +0530
+
+    Create .travis.yml
+
+:000000 100644 0000000000000000000000000000000000000000 7f5bb6079ec52b921521e104cace0beb4281e17c A	.travis.yml
+commit 94ee983fa1dab2ebd3bf3a5c89b860792bef2a08
+tree b4b92c9e4ab8a7fc8dcfa22a7d545cdd493f0029
+parent 7af2990362837fd70ab9d9ab11c30857b3f20b55
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 14:32:12 +0530
+committer GitHub <noreply@github.com> 2020-01-29 14:32:12 +0530
+
+    Update build.gradle
+
+:100644 100644 2866431c0c571967f1baf93c196ee92d9ab4ecaf d245cce4d5a67639f352d043e819ef9172da0ccb M	sonarqube-scanner-gradle/build.gradle
+commit 7af2990362837fd70ab9d9ab11c30857b3f20b55
+tree 78678cad46698b0197f3f9bfd5787b23c951db6d
+parent 37af2ab6a976a6a83481f45266983024558f3349
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 13:07:44 +0530
+committer GitHub <noreply@github.com> 2020-01-29 13:07:44 +0530
+
+    Update build.gradle
+
+:100644 100644 996e346c31fea93e31fc92ccf528da1601dec43a 2866431c0c571967f1baf93c196ee92d9ab4ecaf M	sonarqube-scanner-gradle/build.gradle

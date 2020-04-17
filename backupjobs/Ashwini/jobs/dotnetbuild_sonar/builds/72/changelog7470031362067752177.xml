@@ -1,0 +1,9 @@
+commit 091c61052f043b4e946494a8584b66632139a2d9
+tree eefd820cee402c6fc9902a666e13bc330e749f35
+parent e9ab3240b8a4d0a448e23ddf5324ef122461ca8c
+author ashwinihegde555 <56389774+ashwinihegde555@users.noreply.github.com> 2020-02-24 13:11:50 +0530
+committer GitHub <noreply@github.com> 2020-02-24 13:11:50 +0530
+
+    Create MSBuild.csproj
+
+:000000 100644 0000000000000000000000000000000000000000 589f6d0b47762e9e43d032f32db12fcf35cf8876 A	MSBuild.csproj

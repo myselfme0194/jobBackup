@@ -1,0 +1,69 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.36">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>ashwini</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>199</queueId>
+  <timestamp>1585835238394</timestamp>
+  <startTime>1585835238396</startTime>
+  <result>FAILURE</result>
+  <duration>75</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>import groovy.sql.*
+node(&apos;Deployment-node&apos;){
+
+//sql.execute &quot;select count(*) from pet&quot;
+  Class.forName(&quot;com.mysql.jdbc.Driver&quot;)
+  def sql = Sql.newInstance(&quot;jdbc:mysql://34.220.173.101:3306/jenkins_db&quot;, &quot;jenkins&quot;,&quot;User_password1&quot;, &quot;com.mysql.jdbc.Driver&quot;)
+ /*def DBurl = &apos;http://34.220.173.101:3306&apos;
+def DBuser = &apos;jenkins&apos;
+def DBpassword = &apos;User_password1&apos;
+def DBdriver = &apos;&quot;com.mysql.jdbc.Driver&quot;&apos;
+def sql = Sql.newInstance(DBurl, DBuser, DBpassword, DBdriver)*/
+  
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>27896366</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>21541356</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>41525672</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>18621456</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>2652052</long>
+      </entry>
+    </timings>
+    <sandbox>false</sandbox>
+    <iota>7</iota>
+    <head>1:7</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

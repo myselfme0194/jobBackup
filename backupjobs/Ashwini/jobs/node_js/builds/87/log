@@ -1,0 +1,109 @@
+Started by user [8mha:////4Gojpe4s3cOkK3WWvuXv1k3EB+84BdpmDgMSF9MtJGNEAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/dLi1CL9xMz0+JTUsvyCYgBp74tpxQAAAA==[0mDevops
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4FrjW9LZ2CXBjQR4+K2LOUePGFwfy5q7oNp43I6t2MheAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4EYQ1T7I6Ua0Y3Yl6Afn83MuRbbypfugEVGRUWBLZzc/AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4Lex2nxk1ttqR3G2sqPOX1VhVwGLZArmi4RWw1q9tsSvAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAx2oBn6yfm5BaUlqUX65Zl5KfnlxfoAbDhp6McAAAA=[0mwindows in C:\jenkins\workspace\Ashwini\node_js
+[8mha:////4K9FtIb73GakJfpIBmi+KFteUZ4jIBBZ0rVFrqUKumWTAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4C7NDJyHXWwapdbdimMy2MJb2M4Y3CNHWYSyi0wiZitmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4DRaOpWeXva+OKvPV68dr9O8BBVh9IQrnxQw+KGa7RR8AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (SCM)
+[8mha:////4Jn7LuWuFlekQEWlXCEvGRNsNiGqpX/BI1EH1XGXl36IAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] git
+No credentials specified
+Fetching changes from the remote Git repository
+Checking out Revision 42dd4e7ee49d446809c3d9ff184bd5d1a4edb941 (refs/remotes/origin/master)
+Commit message: "Update package.json"
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/ashwinihegde555/node-js-sample.git # timeout=10
+Fetching upstream changes from https://github.com/ashwinihegde555/node-js-sample.git
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > C:\Program Files\Git\bin\git.exe fetch --tags --force --progress -- https://github.com/ashwinihegde555/node-js-sample.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 42dd4e7ee49d446809c3d9ff184bd5d1a4edb941 # timeout=10
+ > C:\Program Files\Git\bin\git.exe branch -a -v --no-abbrev # timeout=10
+ > C:\Program Files\Git\bin\git.exe branch -D master # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -b master 42dd4e7ee49d446809c3d9ff184bd5d1a4edb941 # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-list --no-walk 42dd4e7ee49d446809c3d9ff184bd5d1a4edb941 # timeout=10
+[8mha:////4IEAt1KLxuglPvq2gAzr4D4WE2yVbvrpixlkvECzXWF0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4Mm7mLSG6WvPehhvhuzkhMsYKzDWN06N0oE0fJatXc9PAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4NYHG47TuvleaaVXGxIxVTvx8w5oE7gOf4ZpNvqzYMKyAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] stage
+[8mha:////4KT+KrI5AjhUCoesyFt0qBCIh5fro+GGD/DWxYmLADPyAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] { (build)
+[8mha:////4CaOztlFk5V3wsZA9MkgwXufikCz/tUtZlqBFikZaAX0AAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] bat
+
+C:\jenkins\workspace\Ashwini\node_js>npm install 
+audited 126 packages in 0.574s
+found 0 vulnerabilities
+
+[8mha:////4LO/UV7dfjLzK/ILHB0/HYuXOFfb8/QoTMNnclPBhhAYAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyGUvHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzN4nqNv9p9o3geV5574AAAA=[0m[Pipeline] }
+[8mha:////4JvaC34wS9YApHN4OzC+n6ei+wvCq5gYCeFgfs//PFReAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bq/le42+AAAA[0m[Pipeline] // stage
+[8mha:////4LXiyjjfdceBZdjJQ7NEZ8UxviImlWm9chdURzs7eAnUAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJKgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxWb3OZZvBXXnAcEAAAA=[0m[Pipeline] stage
+[8mha:////4FKAfecZoWs0VpTHGy7sskO6TZBsRDDdlgjYoN5MLdhpAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] { (artifactory)
+[8mha:////4IFnew6WSJR+SgFepOjzw352DVJlsxkRnM3LBFBlasJbAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiGigQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN27Iu42+AAAA[0m[Pipeline] newArtifactoryServer
+[8mha:////4K8Z7qu6f7PgrCHgYrr42wY5wWip0pHC3yJ1ieJDloLXAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiGoSEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGh1CMKvgAAAA==[0m[Pipeline] newBuildInfo
+[8mha:////4Ez4SWINuK+AvCb7TeJznkL7Hbc+BQmwxf9xHH8+QRaQAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiGiSEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHg5TgTvgAAAA==[0m[Pipeline] artifactoryUpload
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/FETCH_HEAD
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/config
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/description
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/index
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/HEAD
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/applypatch-msg.sample
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/commit-msg.sample
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/post-update.sample
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/fsmonitor-watchman.sample
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/pre-applypatch.sample
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/pre-commit.sample
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/pre-merge-commit.sample
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/pre-push.sample
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/pre-rebase.sample
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/pre-receive.sample
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/prepare-commit-msg.sample
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/update.sample
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/exclude
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/pack-c94d8cfa0bcc78d2af0dcfda3b4a992f58770f54.idx
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/pack-c94d8cfa0bcc78d2af0dcfda3b4a992f58770f54.pack
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/master
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/.gitignore
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/app.json
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/index.js
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/mime
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/mime.cmd
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/mime.ps1
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/HISTORY.md
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/LICENSE
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/package.json
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/README.md
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/array-flatten.js
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/History.md
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/Readme.md
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/.npmignore
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/.coveralls.yml
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/.eslintrc
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/.travis.yml
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/CHANGELOG.md
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/component.json
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/karma.conf.js
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/Makefile
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/node.js
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/Changelog.md
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/inherits.js
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/inherits_browser.js
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/ipaddr.min.js
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/cli.js
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/mime.js
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/types.json
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/db.json
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/license.md
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/readme.md
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/.editorconfig
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/.eslintignore
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/index.d.ts
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/dangerous.js
+[consumer_0] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/Porting-Buffer.md
+[consumer_2] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/safer.js
+[consumer_1] Deploying artifact: http://52.38.91.61:8081/artifactory/hars_dotnet/tests.js
+[8mha:////4F6dkWxW+XkQg4srC10siO2H2Plaf4Qz5sZwMyzK8e1+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICFDQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AERGGHOvgAAAA==[0m[Pipeline] }
+[8mha:////4DpvLfjmd9nvmdqB3GzT3R0CVaeDdPGtLbN6QuQRlVWEAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiIFEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AEOmjScvgAAAA==[0m[Pipeline] // stage
+[8mha:////4CxARYbh1idBOIsdcCKX2oueoxznCI5Xi66L5a1ZmB87AAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkxM04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8ASwoRLr0AAAA=[0m[Pipeline] }
+[8mha:////4Eejk4EW6+xe7TdfNJ+jGv/k4e7YjV3AHx+NwgZe3SoDAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkMhon14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmvhfk+1KQlR9YthWNvQAAAA==[0m[Pipeline] // node
+[8mha:////4LINkewDroEy0arrU0N19dvDciX03e78x3AWkeiMs5k6AAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkxM04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL/eCrPwA3loySL0AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

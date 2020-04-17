@@ -1,0 +1,163 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.36">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>harsha</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.80">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <hudson.plugins.git.util.BuildData plugin="git@4.1.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.1.1">
+              <sha1>cb7c7ed7bc554546fc7fe30ed2aeb324f703a627</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>32</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/harsharameshh/gradel_simple_master.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@4.1.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/lib/jenkins/workspace/Harsha/gradle script/jenkins</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.10">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/harsharameshh/gradel_simple_master.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <com.netsparker.cloud.plugin.NCScanSCMAction plugin="netsparker-cloud-scan@1.1.7">
+      <vcsCommit>
+        <ciBuildServerVersion>2.204.2</ciBuildServerVersion>
+        <ciNcPluginVersion>1.1.4</ciNcPluginVersion>
+        <buildId>32</buildId>
+        <buildConfigurationName>gradle script</buildConfigurationName>
+        <buildURL>job/Harsha/job/gradle%20script/32/</buildURL>
+        <buildHasChange>true</buildHasChange>
+        <versionControlName>git</versionControlName>
+        <committer>noreply</committer>
+        <vcsVersion>a0c89202fee3f0cd3db93dd9d7a692615e82923e</vcsVersion>
+        <ciTimestamp>2020-02-26T07:12+0000</ciTimestamp>
+        <rootURL></rootURL>
+      </vcsCommit>
+    </com.netsparker.cloud.plugin.NCScanSCMAction>
+  </actions>
+  <queueId>62</queueId>
+  <timestamp>1582701567593</timestamp>
+  <startTime>1582701567595</startTime>
+  <result>FAILURE</result>
+  <duration>1374</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node(&apos;linux&apos;) {
+	def buildVersion = &quot;1.0.0.${env.BUILD_NUMBER}&quot;
+	def artifactoryPublishRepo = &apos;Gradel_master&apos;
+
+	dir(&apos;jenkins&apos;) {
+		
+      
+
+			stage(&apos;Checkout&apos;) {
+				git url: &apos;https://github.com/harsharameshh/gradel_simple_master.git&apos;
+				sh &apos;chmod +x ./gradlew &apos;
+			}
+
+			stage(&apos;Build&apos;) {
+				withEnv( &quot;BUILD_VERSION=${buildVersion}&quot;) 
+				{
+					sh &quot;./gradlew clean assemble&quot;
+				}
+			}
+}
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>103951153</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>15642130</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>174303215</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>20098250</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>14214540</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>23</iota>
+    <head>1:23</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.1.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/harsharameshh/gradel_simple_master.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>master</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/var/lib/jenkins/workspace/Harsha/gradle script/jenkins</workspace>
+      <changelogFile>/var/lib/jenkins/jobs/Harsha/jobs/gradle script/builds/32/changelog8003076784367420732.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

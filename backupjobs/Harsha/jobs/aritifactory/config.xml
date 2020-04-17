@@ -1,0 +1,51 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.12"/>
+    <org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty plugin="gitlab-logo@1.0.5">
+      <repositoryName></repositoryName>
+    </org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>node (&apos;linux&apos;){
+  stage(&apos;checkout&apos;) {
+    git &apos;https://github.com/harsharameshh/artifactory.git&apos;
+  }
+  stage(&apos;build&apos;){
+     //  currentBuild.displayName = &quot;1.10&quot;
+      sh  &quot; ./gradlew clean assemble&quot;
+  }
+       stage(&apos;SonarQube analysis&apos;) {
+          withSonarQubeEnv() {
+      	 //  sh &quot; ./gradlew sonarqube -Dsonar.projectKey=harsha_aig -Dsonar.host.url=http://34.219.184.2:9000  -Dsonar.login=admin -Dsonar.password=admin&quot;
+          }
+      	}
+      	stage(&apos;run test&apos;){
+      sh  &quot; ./gradlew build&quot;
+  }
+      	stage(&apos;artifactory&apos;)
+      	{
+      	  
+            sh &quot;./gradlew artifactoryPublish  &quot;  
+             def server = Artifactory.server &apos;JFROG&apos;
+                 def uploadSpec = &quot;&quot;&quot;{
+                 &quot;files&quot;: [{
+                       &quot;pattern&quot;: &quot;path/&quot;,
+                       &quot;target&quot;: &quot;path/&quot;
+                    }]
+                 }&quot;&quot;&quot;
+           
+
+                 server.upload(uploadSpec) 
+     
+            
+      	}
+      }</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

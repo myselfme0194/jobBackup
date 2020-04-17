@@ -1,0 +1,9 @@
+commit ed20b9b5181c9fb307630e556644ea812dbc36b9
+tree 6acae831f654a08d1d66178e8f30807c5676a353
+parent fdca9c646afc4ac71128b0fee85478dbc4639048
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-02-27 15:43:45 +0530
+committer GitHub <noreply@github.com> 2020-02-27 15:43:45 +0530
+
+    Rename gradel.properties to gradle.properties
+
+:100644 100644 f0a6099a09ca0e88d2621794abdafc037c7126eb f0a6099a09ca0e88d2621794abdafc037c7126eb R100	gradel.properties	gradle.properties

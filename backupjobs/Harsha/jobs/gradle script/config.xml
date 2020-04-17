@@ -1,0 +1,39 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.12"/>
+    <org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty plugin="gitlab-logo@1.0.5">
+      <repositoryName></repositoryName>
+    </org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>node(&apos;linux&apos;) {
+	def buildVersion = &quot;1.0.0&quot;
+	def artifactoryPublishRepo = &apos;Gradel_master&apos;
+
+	dir(&apos;jenkins&apos;) {
+		
+      
+
+			stage(&apos;Checkout&apos;) {
+				git  &apos;https://github.com/harsharameshh/gradel_simple_master.git&apos;
+				sh &apos;chmod +x ./gradlew &apos;
+			}
+
+			stage(&apos;Build&apos;) {
+			    echo &quot;harsha&quot;
+				withEnv( &quot;BUILD_VERSION=${buildVersion}&quot;) 
+				{
+					sh &quot;./gradlew clean assemble&quot;
+			}
+			}
+}
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

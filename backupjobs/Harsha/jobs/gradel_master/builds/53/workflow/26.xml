@@ -1,0 +1,27 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.4">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.80">
+    <parentIds>
+      <string>25</string>
+    </parentIds>
+    <id>26</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.80">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>GRADLE_OPTS= -Dsonar.host.url=http://34.219.184.2:9000 -Dsonar.projectKey=gradel_master -Dsonar.login=admin -Dsonar.password=admin</string>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.39">
+      <startTime>1582799511506</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

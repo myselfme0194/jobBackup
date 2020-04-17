@@ -1,0 +1,46 @@
+Started by user [8mha:////4Gojpe4s3cOkK3WWvuXv1k3EB+84BdpmDgMSF9MtJGNEAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/dLi1CL9xMz0+JTUsvyCYgBp74tpxQAAAA==[0mDevops
+[Thu Apr 02 03:48:16 UTC 2020] Starting branch indexing...
+ > /bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials Praveen
+ > /bin/git ls-remote https://github.com/myselfme0194/jenkins-example.git # timeout=10
+ > /bin/git rev-parse --is-inside-work-tree # timeout=10
+Setting origin to https://github.com/myselfme0194/jenkins-example.git
+ > /bin/git config remote.origin.url https://github.com/myselfme0194/jenkins-example.git # timeout=10
+Fetching & pruning origin...
+Listing remote references...
+ > /bin/git config --get remote.origin.url # timeout=10
+ > /bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials Praveen
+ > /bin/git ls-remote -h https://github.com/myselfme0194/jenkins-example.git # timeout=10
+Fetching upstream changes from origin
+ > /bin/git config --get remote.origin.url # timeout=10
+using GIT_ASKPASS to set credentials Praveen
+ > /bin/git fetch --tags --progress --prune origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking branches...
+  Checking branch develop
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: develop (still at 03df67aeee07fa96c3bd8660b8f69fb1221fbd29)
+  Checking branch master
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: master (still at 03df67aeee07fa96c3bd8660b8f69fb1221fbd29)
+  Checking branch feature-1
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: feature-1 (still at bfa4f4b521a3ea119746dfbc59f9fa7d7352a0f7)
+  Checking branch feature-aws-deploy
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: feature-aws-deploy (still at f842d55ed258c86e279897682926e16034d01d3d)
+  Checking branch feature-test-pipeline-cucumber
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: feature-test-pipeline-cucumber (still at 3fe0f99d2822774319c6a9c1c6e99f82c11e3391)
+  Checking branch feature/cicd-pcf
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: feature/cicd-pcf (still at acca84e265a23dfa47b6578a267b3a74b08c7027)
+Processed 6 branches
+[Thu Apr 02 03:48:17 UTC 2020] Finished branch indexing. Indexing took 0.94 sec
+Finished: SUCCESS

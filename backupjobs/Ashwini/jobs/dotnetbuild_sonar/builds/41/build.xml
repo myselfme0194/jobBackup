@@ -1,0 +1,181 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.36">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>aig_devops</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.15">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.1.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.1.0">
+              <sha1>026a4d13f448fb001602e39a8f271929078807ed</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>41</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/ashwinihegde555/DemoApp.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@4.1.0">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>C:\jenkins\workspace\dotnetbuild_sonar</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.9">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/ashwinihegde555/DemoApp.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <com.cloudbees.jenkins.plugins.bitbucket.FirstCheckoutCompletedInvisibleAction plugin="cloudbees-bitbucket-branch-source@2.7.0"/>
+    <com.netsparker.cloud.plugin.NCScanSCMAction plugin="netsparker-cloud-scan@1.1.7">
+      <vcsCommit>
+        <ciBuildServerVersion>2.204.2</ciBuildServerVersion>
+        <ciNcPluginVersion>1.1.4</ciNcPluginVersion>
+        <buildId>41</buildId>
+        <buildConfigurationName>dotnetbuild_sonar</buildConfigurationName>
+        <buildURL>job/dotnetbuild_sonar/41/</buildURL>
+        <buildHasChange>false</buildHasChange>
+        <versionControlName></versionControlName>
+        <committer></committer>
+        <vcsVersion></vcsVersion>
+        <ciTimestamp>2020-02-18T11:29+0000</ciTimestamp>
+        <rootURL></rootURL>
+      </vcsCommit>
+    </com.netsparker.cloud.plugin.NCScanSCMAction>
+  </actions>
+  <queueId>679</queueId>
+  <timestamp>1582025367659</timestamp>
+  <startTime>1582025367667</startTime>
+  <result>FAILURE</result>
+  <duration>14650</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node(&apos;win-10&apos;){
+    stage(&apos;SCM&apos;){
+    git &apos;https://github.com/ashwinihegde555/DemoApp.git&apos;
+    }
+    stage(&apos;Restoree nuget&apos;){
+       bat &apos;&quot;C:/work/nuget.exe&quot; restore DemoApp.sln&apos;
+    }
+    stage(&apos;Clean&apos;){
+        bat &apos;dotnet clean DemoApp.sln&apos;
+    }
+    //alternative
+      /* stage(&apos;build&apos;){
+        bat &quot;\&quot;${tool &apos;MSBuild&apos;}\&quot; DemoApp.sln&quot;
+    }*/
+    stage(&apos;Build&apos;){
+         bat &apos;dotnet build DemoApp.sln&apos;
+    }
+    stage(&apos;SonarQube analysis&apos;) {
+         /* withSonarQubeEnv() {
+            String sonarMSBuild = &quot;C:\\sonar-scanner-msbuild-4.7.1.2311-net46&quot;
+            String projectKey     = &quot;anusha&quot;
+            bat &quot;\&quot;${sonarMSBuild}/SonarQube.Scanner.MSBuild.exe\&quot; begin /s:${sonarMSBuild}/SonarQube.Analysis.xml  /k:\&quot;${projectKey}\&quot; /v:\&quot;1.0\&quot; &quot;
+
+            bat &quot;\&quot;${tool &apos;MSBuild&apos;}\&quot;/t:Rebuild  DemoApp.sln &quot;
+           bat &quot;\&quot;${sonarMSBuild}/MSBuild.SonarQube.Runner.exe\&quot; end&quot;
+              
+          }*/
+
+    }
+    stage(&apos;Pack&apos;){
+        bat &apos;dotnet pack DemoApp.sln --no-build --output nupkgs&apos;
+       
+    }
+    stage(&apos;Artifactory&apos;){
+        bat &quot;dotnet nuget push **\\nupkgs\\*.nupkg -s http://52.38.91.61:8081/artifactory/dotnet&quot;
+    }
+    
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>169528908</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>21418729</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>555113196</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>31343072</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>31775096</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>41</iota>
+    <head>1:41</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.1.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/ashwinihegde555/DemoApp.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>master</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node>windows</node>
+      <workspace>C:\jenkins\workspace\dotnetbuild_sonar</workspace>
+      <changelogFile>/var/lib/jenkins/jobs/dotnetbuild_sonar/builds/41/changelog7453625932912427631.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

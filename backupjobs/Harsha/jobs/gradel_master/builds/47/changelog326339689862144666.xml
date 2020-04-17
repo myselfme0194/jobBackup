@@ -1,0 +1,9 @@
+commit fdca9c646afc4ac71128b0fee85478dbc4639048
+tree affaa7352de383e4bb55665646a11bdf67441ffe
+parent 37432bfc5f5dc925b1fbadee72de899accd0321b
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-02-27 15:41:59 +0530
+committer GitHub <noreply@github.com> 2020-02-27 15:41:59 +0530
+
+    Create gradel.properties
+
+:000000 100644 0000000000000000000000000000000000000000 f0a6099a09ca0e88d2621794abdafc037c7126eb A	gradel.properties

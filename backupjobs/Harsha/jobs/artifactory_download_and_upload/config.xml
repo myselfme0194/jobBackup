@@ -1,0 +1,48 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.12"/>
+    <org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty plugin="gitlab-logo@1.0.5">
+      <repositoryName></repositoryName>
+    </org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>node(&apos;windows&apos;)
+{
+    stage(&apos;download&apos;)
+    {
+        def server = Artifactory.newServer url: &apos;http://52.38.91.61:8081/artifactory&apos;, username: &apos;admin&apos;, password: &apos;admin@123&apos;
+        def downloadSpec = &quot;&quot;&quot;{
+                                &quot;files&quot;: [
+                                            {
+                                             &quot;pattern&quot;: &quot;devops_dummy/*&quot;,
+                                             &quot;target&quot;: &quot;devops_dummy/com/github/jitpack/&quot;
+                                            }
+                                        ]
+                                }&quot;&quot;&quot;
+        server.download spec: downloadSpec
+    }
+    stage(&apos;upload&apos;)
+    {
+        def server = Artifactory.newServer url: &apos;http://52.38.91.61:8081/artifactory&apos;, username: &apos;admin&apos;, password: &apos;admin@123&apos;
+        def uploadSpec = &quot;&quot;&quot;{
+  &quot;files&quot;: [
+    {
+      &quot;pattern&quot;: &quot;devops_dummy/com/github/jitpack/*&quot;,
+      &quot;target&quot;: &quot;upload/&quot;
+    }
+ ]
+}&quot;&quot;&quot;
+server.upload spec: uploadSpec
+}
+    
+    
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

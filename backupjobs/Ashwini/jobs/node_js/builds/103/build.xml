@@ -1,0 +1,156 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.36">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>aig_devops</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.1.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.1.1">
+              <sha1>42dd4e7ee49d446809c3d9ff184bd5d1a4edb941</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>103</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/ashwinihegde555/node-js-sample.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@4.1.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>C:\jenkins\workspace\Ashwini\node_js</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.10">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/ashwinihegde555/node-js-sample.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+  </actions>
+  <queueId>66</queueId>
+  <timestamp>1582701886902</timestamp>
+  <startTime>1582701886905</startTime>
+  <result>SUCCESS</result>
+  <duration>51313</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node(&apos;win-10&apos;){
+    stage(&apos;SCM&apos;){
+        git &apos;https://github.com/ashwinihegde555/node-js-sample.git&apos;
+    }
+    stage(&apos;sonar&apos;){
+      //  String sonarNode=&quot;C:\\work\\sonar-scanner-4.2.0.1873-windows\\bin&quot;
+       bat  &apos; C:\\work\\sonar-scanner-4.2.0.1873-windows\\bin\\sonar-scanner.bat -D&quot;sonar.projectKey=ash_node&quot; -D&quot;sonar.sources=.&quot; -D&quot;sonar.host.url=http://34.219.184.2:9000&quot; -D&quot;sonar.login=d2a8c58e3eef554636d0643b38c72e8d7993a63b&quot; &apos;
+    }
+   stage(&apos;build&apos;){
+       bat &apos;npm install&apos;
+       bat &apos;npm build&apos;
+
+    }
+    stage(&apos;test&apos;){
+        bat &apos;npm test&apos;
+    }
+    stage(&apos;zip&apos;){
+        zip zipFile: &apos;node-js-sample5.zip&apos;
+    }
+    stage(&apos;artifactory&apos;){
+         def server = Artifactory.newServer url: &apos;http://52.38.91.61:8081/artifactory&apos;, username: &apos;admin&apos;, password: &apos;admin@123&apos;
+        def uploadSpec = &quot;&quot;&quot;{
+  &quot;files&quot;: [
+            {
+                 &quot;pattern&quot;: &quot;/*.zip&quot;,
+                 &quot;target&quot;: &quot;ashwini_node/&quot;
+             }
+         ]  
+}&quot;&quot;&quot;
+server.upload spec: uploadSpec
+            }
+    }
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>127667306</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>12581048</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>413170758</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>16831634</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>31086139</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>40</iota>
+    <head>1:40</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.1.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/ashwinihegde555/node-js-sample.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>master</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node>windows</node>
+      <workspace>C:\jenkins\workspace\Ashwini\node_js</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

@@ -1,0 +1,98 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.12"/>
+    <org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty plugin="gitlab-logo@1.0.5">
+      <repositoryName></repositoryName>
+    </org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>node(&apos;win-10&apos;){
+    stage(&apos;SCM&apos;){
+    git &apos;https://github.com/ashwinihegde555/DemoApp.git&apos;
+    }
+    stage(&apos;Restoree nuget&apos;){
+       bat &apos;&quot;C:/work/nuget.exe&quot; restore DemoApp.sln&apos;
+    }
+    stage(&apos;Clean&apos;){
+        bat &apos;dotnet clean DemoApp.sln&apos;
+    }
+    //alternative
+      /* stage(&apos;build&apos;){
+        bat &quot;\&quot;${tool &apos;MSBuild&apos;}\&quot; DemoApp.sln&quot;
+    }*/
+    stage(&apos;Build&apos;){
+         bat &apos;dotnet build DemoApp.sln&apos;
+    }
+    stage(&apos;SonarQube analysis&apos;) {
+          withSonarQubeEnv() {
+            String sonarMSBuild = &quot;C:\\sonar-scanner-msbuild-4.7.1.2311-net46&quot;
+            String projectKey     = &quot;anusha&quot;
+            bat &quot;\&quot;${sonarMSBuild}/SonarQube.Scanner.MSBuild.exe\&quot; begin /s:${sonarMSBuild}/SonarQube.Analysis.xml  /k:\&quot;${projectKey}\&quot; /v:\&quot;1.0\&quot; &quot;
+
+            bat &quot;\&quot;${tool &apos;MSBuild&apos;}\&quot;/t:Rebuild  DemoApp.sln &quot;
+           bat &quot;\&quot;${sonarMSBuild}/MSBuild.SonarQube.Runner.exe\&quot; end&quot;
+              
+          }
+
+    }
+    stage(&apos;Pack&apos;)
+    {
+        bat &apos;dotnet pack DemoApp.sln --no-build --output nupkgs&apos;
+       
+    }
+    stage(&apos;Artifactory&apos;)
+    {
+      //withCredentials([usernamePassword(credentialsId: &apos;artifactory&apos;, passwordVariable: &apos;password&apos;, usernameVariable: &apos;jfrog&apos;)]) {
+      // bat &quot;dotnet nuget push **\\nupkgs\\*.nupkg -k  X-JFrog-Art-Api:AKCp5ek8EjRmdo8gkoFj72Bqrf5DFGTTLCeYuTHvoiGPyVCu933SKBtTb8E6QakJWwCVTp6J1 -t http://52.38.91.61:8081/artifactory/dotnet/1&quot;
+     //bat &quot;dotnet nuget push **\\nupkgs\\*.nupkg -k X-JFrog-Art-Api:AKCp5ek8EjRmdo8gkoFj72Bqrf5DFGTTLCeYuTHvoiGPyVCu933SKBtTb8E6QakJWwCVTp6J1 -s http://52.38.91.61:8081/artifactory/webapp/#/artifacts/browse/tree/General/dotnet&quot;
+      def server = Artifactory.newServer url: &apos;http://52.38.91.61:8081/artifactory&apos;, username: &apos;admin&apos;, password: &apos;admin@123&apos;
+        def uploadSpec = &quot;&quot;&quot;{
+  &quot;files&quot;: [
+            {
+                 &quot;pattern&quot;: &quot;*&quot;,
+                 &quot;target&quot;: &quot;hars_dotnet/&quot;
+             }
+         ]  
+}&quot;&quot;&quot;
+server.upload spec: uploadSpec
+            }
+            
+     stage(&apos;Download&apos;)
+    {
+        def server = Artifactory.newServer url: &apos;http://52.38.91.61:8081/artifactory&apos;, username: &apos;admin&apos;, password: &apos;admin@123&apos;
+        def downloadSpec = &quot;&quot;&quot;{
+                                &quot;files&quot;: [
+                                            {
+                                             &quot;pattern&quot;: &quot;dotnet/*&quot;,
+                                             &quot;target&quot;: &quot;dotnet/&quot;
+                                            }
+                                        ]
+                                }&quot;&quot;&quot;
+        server.download spec: downloadSpec
+    }
+     stage(&apos;Upload&apos;)
+    {
+        def server = Artifactory.newServer url: &apos;http://52.38.91.61:8081/artifactory&apos;, username: &apos;admin&apos;, password: &apos;admin@123&apos;
+        def uploadSpec = &quot;&quot;&quot;{
+  &quot;files&quot;: [
+    {
+      &quot;pattern&quot;: &quot;dotnet/&quot;,
+      &quot;target&quot;: &quot;upload/&quot;
+    }
+ ]
+}&quot;&quot;&quot;
+server.upload spec: uploadSpec
+}
+        
+    }
+    
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

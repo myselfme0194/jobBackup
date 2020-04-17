@@ -1,0 +1,9 @@
+commit 37af2ab6a976a6a83481f45266983024558f3349
+tree 1334eb57fc54e70dd4449b109a5f14e95fccc450
+parent 585ec8cc9ea638e0edd9f400802b59e6c5f46e30
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-01-29 12:49:10 +0530
+committer GitHub <noreply@github.com> 2020-01-29 12:49:10 +0530
+
+    Update build.gradle
+
+:100644 100644 eb851154fd29cda8694786da476a0fce135c6411 996e346c31fea93e31fc92ccf528da1601dec43a M	sonarqube-scanner-gradle/build.gradle

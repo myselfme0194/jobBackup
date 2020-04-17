@@ -1,0 +1,114 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.36">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>aig_devops</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.10">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/harsharameshh/sonar-scanner-gradle.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@2.3.1">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <hudson.plugins.sonar.action.SonarMarkerAction plugin="sonar@2.11"/>
+    <hudson.plugins.sonar.action.SonarAnalysisAction plugin="sonar@2.11">
+      <installationName>sonarqube</installationName>
+      <ceTaskId>AXB7mjWlPktL7JWZDRcw</ceTaskId>
+      <url>http://34.219.184.2:9000/dashboard?id=harsha_007</url>
+      <serverUrl>http://34.219.184.2:9000</serverUrl>
+      <isNew>true</isNew>
+      <isSkipped>false</isSkipped>
+    </hudson.plugins.sonar.action.SonarAnalysisAction>
+    <hudson.plugins.sonar.action.SonarCacheAction plugin="sonar@2.11">
+      <infoByTaskId>
+        <entry>
+          <string>AXB7mjWlPktL7JWZDRcw</string>
+          <hudson.plugins.sonar.client.ProjectInformation>
+            <created>1582633751498</created>
+            <name>aigdevops</name>
+            <url>http://34.219.184.2:9000/dashboard?id=harsha_007</url>
+            <status>OK</status>
+            <ceStatus>success</ceStatus>
+            <ceUrl>http://34.219.184.2:9000/api/ce/task?id=AXB7mjWlPktL7JWZDRcw</ceUrl>
+          </hudson.plugins.sonar.client.ProjectInformation>
+        </entry>
+      </infoByTaskId>
+      <lastRequest>1582633751514</lastRequest>
+      <lastProjInfo>
+        <hudson.plugins.sonar.client.ProjectInformation reference="../../infoByTaskId/entry/hudson.plugins.sonar.client.ProjectInformation"/>
+      </lastProjInfo>
+    </hudson.plugins.sonar.action.SonarCacheAction>
+  </actions>
+  <queueId>1</queueId>
+  <timestamp>1582621633595</timestamp>
+  <startTime>1582621633599</startTime>
+  <result>SUCCESS</result>
+  <duration>47382</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node(&apos;linux&apos;) {
+  stage(&apos;SCM&apos;) {
+    git &apos;https://github.com/harsharameshh/sonar-scanner-gradle.git&apos;
+  }
+  stage(&apos;build&apos;){
+      sh  &quot; ./gradlew build&quot;
+       sh &quot;./gradlew --debug &quot;
+  }
+  
+  stage(&apos;SonarQube analysis&apos;) {
+          withSonarQubeEnv() {
+      	   sh &quot; ./gradlew sonarqube -Dsonar.projectKey=harsha_007 -Dsonar.host.url=http://34.219.184.2:9000  -Dsonar.login=admin -Dsonar.password=admin&quot;
+           
+      	}
+      
+  }
+}</script>
+    <loadedScripts class="map"/>
+    <persistedClean>true</persistedClean>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>295595562</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>1132681660</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1819850096</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>744979619</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>268530321</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>30</iota>
+    <head>28:30</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+    <storageDir>workflow-fallback</storageDir>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

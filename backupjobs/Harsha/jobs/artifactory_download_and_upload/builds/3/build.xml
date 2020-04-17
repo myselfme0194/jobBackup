@@ -1,0 +1,87 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.36">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>aig_devops</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>80</queueId>
+  <timestamp>1582527782061</timestamp>
+  <startTime>1582527782063</startTime>
+  <result>SUCCESS</result>
+  <duration>836</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node(&apos;windows&apos;)
+{
+    stage(&apos;download&apos;)
+    {
+        def server = Artifactory.newServer url: &apos;http://52.38.91.61:8081/artifactory&apos;, username: &apos;admin&apos;, password: &apos;admin@123&apos;
+        def downloadSpec = &quot;&quot;&quot;{
+                                &quot;files&quot;: [
+                                            {
+                                             &quot;pattern&quot;: &quot;devops_dummy/*&quot;,
+                                             &quot;target&quot;: &quot;devops_dummy/com/github/jitpack/&quot;
+                                            }
+                                        ]
+                                }&quot;&quot;&quot;
+        server.download spec: downloadSpec
+    }
+    stage(&apos;upload&apos;)
+    {
+        def server = Artifactory.newServer url: &apos;http://52.38.91.61:8081/artifactory&apos;, username: &apos;admin&apos;, password: &apos;admin@123&apos;
+        def uploadSpec = &quot;&quot;&quot;{
+  &quot;files&quot;: [
+    {
+      &quot;pattern&quot;: &quot;devops_dummy/com/github/jitpack/*&quot;,
+      &quot;target&quot;: &quot;upload/&quot;
+    }
+ ]
+}&quot;&quot;&quot;
+server.upload spec: uploadSpec
+}
+    
+    
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>83100900</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>55192630</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>158723480</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>38425356</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>10847889</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>21</iota>
+    <head>1:21</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

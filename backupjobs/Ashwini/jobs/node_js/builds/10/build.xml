@@ -1,0 +1,70 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.36">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>aig_devops</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>121</queueId>
+  <timestamp>1582549821005</timestamp>
+  <startTime>1582549821007</startTime>
+  <result>FAILURE</result>
+  <duration>713</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>pipeline {
+  agent any
+ 
+  tools {nodejs &quot;node&quot;}
+ 
+  stages {
+    stage(&apos;Example&apos;) {
+      steps {
+          git &apos;https://github.com/ashwinihegde555/node-js-sample.git&apos;
+        sh &apos;npm config ls&apos;
+      }
+    }
+  }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>10942793</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>37080072</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>677960144</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>24914401</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>1623293</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>3</iota>
+    <head>1:3</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

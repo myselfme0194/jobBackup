@@ -1,0 +1,97 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.36">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>aig_devops</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@2.6.3">
+      <sourceId>8125ffa3-d85f-435d-9ed3-e390a2b92048</sourceId>
+      <revision class="jenkins.plugins.git.GitBranchSCMRevision" plugin="git@4.1.1">
+        <head class="jenkins.plugins.git.GitBranchSCMHead">
+          <name>master</name>
+        </head>
+        <hash>03df67aeee07fa96c3bd8660b8f69fb1221fbd29</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+  </actions>
+  <queueId>185</queueId>
+  <timestamp>1585799335621</timestamp>
+  <startTime>1585799335623</startTime>
+  <result>FAILURE</result>
+  <duration>767</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>pipeline {
+    agent any
+
+    stages {
+        stage (&apos;Compile Stage&apos;) {
+
+            steps {
+                withMaven(maven : &apos;maven_3_5_0&apos;) {
+                    sh &apos;mvn clean compile&apos;
+                }
+            }
+        }
+
+        stage (&apos;Testing Stage&apos;) {
+
+            steps {
+                withMaven(maven : &apos;maven_3_5_0&apos;) {
+                    sh &apos;mvn test&apos;
+                }
+            }
+        }
+
+
+        stage (&apos;Deployment Stage&apos;) {
+            steps {
+                withMaven(maven : &apos;maven_3_5_0&apos;) {
+                    sh &apos;mvn deploy&apos;
+                }
+            }
+        }
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>8499154</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>9299839</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>79002828</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>12803206</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>1495208</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>3</iota>
+    <head>1:3</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

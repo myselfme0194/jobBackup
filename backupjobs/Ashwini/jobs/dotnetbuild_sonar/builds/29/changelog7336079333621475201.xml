@@ -1,0 +1,9 @@
+commit 17806420d336274c67f235097525b4b12f3d97f3
+tree a4a6c497da3983d7128eca26669a8ed1a53fdf02
+parent a8131222893c6715bf8e4d93b3e8c63a39d2f315
+author ashwinihegde555 <56389774+ashwinihegde555@users.noreply.github.com> 2020-02-18 16:24:47 +0530
+committer GitHub <noreply@github.com> 2020-02-18 16:24:47 +0530
+
+    Update DemoApp.csproj
+
+:100644 100644 3f9d90d462be4e7be3b068c24eda861a85a793e5 c5bf34ddf65428badc7c4856c29a2660a356c596 M	DemoApp/DemoApp.csproj

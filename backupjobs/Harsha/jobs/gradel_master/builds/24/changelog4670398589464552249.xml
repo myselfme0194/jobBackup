@@ -1,0 +1,27 @@
+commit 677ffa841aa8356af1f44b19cc8a4f81641702b3
+tree 0ef85f0968f6de74c7ba50fecdbf37f669acb319
+parent a9a3dd9b05a139ccbc5c972863a82843b0000d0b
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-02-26 16:42:40 +0530
+committer GitHub <noreply@github.com> 2020-02-26 16:42:40 +0530
+
+    Update build.gradle
+
+:100644 100644 cb64538715d27fdedbd1ee6a1959ecf1ceb9232d a63d72b604b163a6a94e92a6f031ae2147b5aeef M	build.gradle
+commit a9a3dd9b05a139ccbc5c972863a82843b0000d0b
+tree cf306292004da67cdb1117848b2e2fa67dcefc47
+parent f00abc6136327533802be3b4b2b5aeffd6a89fc1
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-02-26 16:27:00 +0530
+committer GitHub <noreply@github.com> 2020-02-26 16:27:00 +0530
+
+    Update jenkins
+
+:100644 100644 c6e5ed3e388fc9da04b52ac877c6a95caba2b586 a9d06dbf111d33bc17003916d77c31dcbfe9d668 M	Script/jenkins
+commit f00abc6136327533802be3b4b2b5aeffd6a89fc1
+tree 4e1dbc364a8a339108dc3f36d0f1d5b14660d50c
+parent 88808be8aa04c6495bbeeec6bd44e08735e2e740
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-02-26 16:24:01 +0530
+committer GitHub <noreply@github.com> 2020-02-26 16:24:01 +0530
+
+    Update common.properties
+
+:100644 100644 0ae040b692ec3e927163db2b984135aa3c088cba 8b137891791fe96927ad78e64b0aad7bded08bdc M	Script/common.properties

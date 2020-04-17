@@ -1,0 +1,18 @@
+commit f56b242b45573d3d97a26854e7f0d312095f51c0
+tree 4f4131e9edf488b3f02e6114ccb9211cae2fd48a
+parent d4256abc0d48e35b0b9a6ac4fe6609b929924510
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-02-06 18:10:43 +0530
+committer GitHub <noreply@github.com> 2020-02-06 18:10:43 +0530
+
+    Create gradle.properties
+
+:000000 100644 0000000000000000000000000000000000000000 f0a6099a09ca0e88d2621794abdafc037c7126eb A	gradle.properties
+commit d4256abc0d48e35b0b9a6ac4fe6609b929924510
+tree f720d7ecf6ebce05ff8e5c4c0136819898ab48db
+parent eec762317f33f6f02ee97272d48862f09892c435
+author harsharameshh <48444072+harsharameshh@users.noreply.github.com> 2020-02-06 18:08:06 +0530
+committer GitHub <noreply@github.com> 2020-02-06 18:08:06 +0530
+
+    Update build.gradle
+
+:100644 100644 cb64538715d27fdedbd1ee6a1959ecf1ceb9232d 365ac97fda1369740f2509b869876d8ff228c1c3 M	build.gradle

@@ -1,0 +1,9 @@
+commit 62b14f3ceaf553c4b1aa558891044b60cbfe031d
+tree 8d35f472eef43fb95d9b4df9e7a213df5fe81a85
+parent 1e6c99c7fa156486cd6a99a2c02f024a1127be6a
+author ashwinihegde555 <56389774+ashwinihegde555@users.noreply.github.com> 2020-02-18 20:45:42 +0530
+committer GitHub <noreply@github.com> 2020-02-18 20:45:42 +0530
+
+    Update nuget.config
+
+:100644 100644 9f4b4e756af3a91f36206e1900dd1f23a3b425a9 9df590afcf5080e0ec5036792e6c3572e0885dc4 M	DemoApp/nuget.config

@@ -1,0 +1,48 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.12"/>
+    <org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty plugin="gitlab-logo@1.0.5">
+      <repositoryName></repositoryName>
+    </org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>node(&apos;win-10&apos;){
+    stage(&apos;SCM&apos;){
+        git &apos;https://github.com/ashwinihegde555/node-js-sample.git&apos;
+    }
+    stage(&apos;sonar&apos;){
+       bat  &apos; C:\\work\\sonar-scanner-4.2.0.1873-windows\\bin\\sonar-scanner.bat -D&quot;sonar.projectKey=ash_node&quot; -D&quot;sonar.sources=.&quot; -D&quot;sonar.host.url=http://34.219.184.2:9000&quot; -D&quot;sonar.login=d2a8c58e3eef554636d0643b38c72e8d7993a63b&quot; &apos;
+    }
+   stage(&apos;build&apos;){
+       bat &apos;npm install&apos;
+       bat &apos;npm build&apos;
+    }
+    stage(&apos;test&apos;){
+        bat &apos;npm test&apos;
+    }
+    stage(&apos;zip&apos;){
+        zip zipFile: &apos;node-js-sample5.zip&apos;
+    }
+    stage(&apos;artifactory&apos;){
+         def server = Artifactory.newServer url: &apos;http://52.38.91.61:8081/artifactory&apos;, username: &apos;admin&apos;, password: &apos;admin@123&apos;
+        def uploadSpec = &quot;&quot;&quot;{
+  &quot;files&quot;: [
+            {
+                 &quot;pattern&quot;: &quot;/*.zip&quot;,
+                 &quot;target&quot;: &quot;ashwini_node/&quot;
+             }
+         ]  
+}&quot;&quot;&quot;
+server.upload spec: uploadSpec
+            }
+    }
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

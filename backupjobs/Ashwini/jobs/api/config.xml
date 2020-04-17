@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.11"/>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.13">
+      <gitLabConnection></gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty plugin="gitlab-logo@1.0.5">
+      <repositoryName></repositoryName>
+    </org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty>
+    <com.gitee.jenkins.connection.GiteeConnectionProperty plugin="gitee@1.1.8">
+      <giteeConnection></giteeConnection>
+    </com.gitee.jenkins.connection.GiteeConnectionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.78">
+    <script>node(&apos;linux&apos;){
+   try{
+    def get = new URL(&quot;https://httpbin.org/get&quot;).openConnection();
+           def getRC = get.getResponseCode();
+        echo getRC
+   }catch (err) {
+            echo err.getMessage()
+            echo &quot;Error detected, but we will continue.&quot;
+        }
+}</script>
+    <sandbox>false</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

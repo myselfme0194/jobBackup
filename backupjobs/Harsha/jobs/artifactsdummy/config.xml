@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.11"/>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.13">
+      <gitLabConnection></gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty plugin="gitlab-logo@1.0.5">
+      <repositoryName></repositoryName>
+    </org.jenkinsci.plugins.gitlablogo.GitlabLogoProperty>
+    <com.gitee.jenkins.connection.GiteeConnectionProperty plugin="gitee@1.1.8">
+      <giteeConnection></giteeConnection>
+    </com.gitee.jenkins.connection.GiteeConnectionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.78">
+    <script>node (&apos;linux&apos;){
+  stage(&apos;checkout&apos;) {
+    git &apos;https://github.com/harsharameshh/artifactory.git&apos;
+  }
+  stage(&apos;build&apos;){
+      sh  &quot; ./gradlew clean assemble&quot;
+  }
+       
+      	stage(&apos;artifactory&apos;)
+      	{
+             
+             sh &quot;./gradlew artifactoryPublish  &quot;  
+
+      	}
+      }</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
